@@ -57,11 +57,16 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.255);
+    background-color: rgba(0, 0, 0, 0.514);
     max-width: 400px;
+    text-shadow: 1px 1px 0px black;
 }
 
 .normal {
@@ -74,6 +79,22 @@ section.imagem > p {
     color: white;
 }
 
+#flores {
+    background-image: url(../background001.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+#papel {
+    background-image: url(../background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
 
 footer {
     background-color: black;
