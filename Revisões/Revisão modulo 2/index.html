@@ -14,6 +14,27 @@
             line-height: 1.2em;
             margin: 5px;
         }
+        
+        #h:hover {
+            color: purple;
+            font-size: 1.2em;
+        }
+        #h {
+            text-decoration: underline;
+        }
+
+        #v:visited {
+            color: red;
+        }
+
+        #a:active {
+            color: green;
+            font-size: 2em;
+        }
+
+        #a {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -49,6 +70,58 @@
             <p>Monoespaçadas <span style="font-family: monospace; font-size: 1.2em;">(Todos os glifos possuem a mesma largura)</span></p>
             <p>Handwriting <span style="font-family: cursive;">(Simula uma escrita à mão)</span></p>
             <p>Display ou Comemorativas <span style="font-family: 'Franklin Gothic Medium'">(Não se baseia em nenhuma das outras)</span></p>
+        </article>
+        <article>
+            <h2>Tamanhos de fontes</h2>
+            <p>Aqui estão exemplos de cada medida usando o numero "1" como comparação das seguintes medidas: px, pt, mm, vh, ex, vw, pc, em, rem, cm, in.</p>
+            <span class="medida" style="font-size: 1px;">1px</span>
+            <span class="medida" style="font-size: 1pt;">1pt</span>
+            <span class="medida" style="font-size: 1mm;">1mm</span>
+            <span class="medida" style="font-size: 1vh;">1vh</span>
+            <span class="medida" style="font-size: 1ex;">1ex</span>
+            <span class="medida" style="font-size: 1vw;">1vw</span>
+            <span class="medida" style="font-size: 1pc;">1pc</span>
+            <span class="medida" style="font-size: 1em;">1em</span>
+            <span class="medida" style="font-size: 1rem;">1rem</span>
+            <span class="medida" style="font-size: 1cm;">1cm</span>
+            <span class="medida" style="font-size: 1in;">1in</span>
+            <p>mm, cm, e in são unidades já conhecidas (milimetros, centimetros e polegadas); <br>
+            px é pixel, uma fonte naturalmente tem 16px; <br>
+            pt é ponto aproximadamente 1,33px; <br>
+            pc é paica é exatamente 16px;
+            em é uma medida relativa ao tamanho atual da fonte, uma fonte de 16px com 2em terá 32px; <br>
+            ex é a baseada na altura do "x", em fontes padrões com 16px 1ex tem 8px; <br>
+            rem é baseada no tamanho da fonte definida no HTML, por padrão é 16px; <br>
+            vw é beaseada na largura da tela, 1vw é 1% da largura mostrada; <br>
+            vh é o mesmo que vw mas sobre a largura.
+            </p>
+        </article>
+        <article>
+            <h2>Fontes Externas</h2>
+            <p>Você deve baixar a fonte que você deseja usar, essa fonte pode vir de vários formatos mostrados abaixo, é necessário criar uma pasta fonts em sua parta de arquivos da página e usar a regra @font-face { font-family:  src: url(); na url você deve colocar o nome do arquivo EXATAMENTE como está escrito entre “” após isso você deve tirar o “;” e colocar a tag format() e adicionar o tipo de formato da sua fonte, depois colocar o “;” ao final do format. Por fim você adiciona um nome para sua fonte em “font-family:”. </p>
+                <h3>Tipos de format()</h3>
+                <ul>
+                <li>opentype (otf)
+                <li>truetype (ttf)
+                <li>embedded-opentype (eot)
+                <li>truetype-aat (Apple advanced typography)
+                <li>svg 
+                </ul>
+        </article>
+        <article>
+            <p style="text-indent: 1.5em;">Text-indent, dentro de style, pode ser usado para criar um espaço no começo de uma escrita.</p>
+        </article>
+        <article>
+            <h2>Pseudoclasses</h2>
+            <p>Pseudoclasses são palavras chaves que são determinar por um “:”, como por exemplo <span id="h">“:hover”</span> indica que ao passar o mouse por cima desta característica dentro do site acionará outra coisa, como por exemplo fazer outro texto aparecer.</p>
+            <p>visited pode modificar a cor de um link ao já ter visitado ele. <a id="v" href="#">link</a></p>
+            <p>active muda algo ao clicar <span id="a">clica</span></p>
+        </article>
+        <article>
+            <h2>Caixas</h2>
+            <p>Caixas são divididas em box-level e inline-level.</p>
+            <h3>Anatomia</h3>
+            <img src="" alt="">
         </article>
      </main>
      <footer>
