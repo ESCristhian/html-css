@@ -181,6 +181,47 @@
             <div id="margem" style="position: absolute; left: 100px;">Posição absoluta</div>
         </article>
      </main>
+     <main 
+     style=" color: white; 
+     background-image: url(media/background001.jpg); background-position: center center; 
+     height: 500px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     ">
+        <h1 style="margin-top: 50px;">Módulo 3</h1>
+        <p>O background-image serve para criar um fundo com uma imagem e não possui valor semantico, apenas visual. </p>
+        <p>Também pode ser usada a propriedade linear-gradient para criar um degrade de corer ao fundo, usando background-position você pode alterar o ponto inicial de seu fundo usando left, center ou right para a coluna da imagem e top, center e bottom para a linha da imagem.</p>
+        <p>Usando background-size também é possivel alterar o tamanho do fundo: <br> 100% 100%: preenche toda a tela em qualquer ocasião;<br>
+        contain: sempre mostra a imagem totalmente sem alterar nenhum tamanho gerando cortes na tela;<br> 
+        cover: preenche toda a tela e não destorce a imagem mesmo que tenha que cortar uma parte dela.</p>
+        <p>background-repeat é usado para decidir se a imagem irá ou não repetir e também se ela repetirá para baixo ou para a direita usando repeat-x e y.</p>
+        <p>Usamos background-attachment para decidir se a imagem irá ou não se mover junto com o scroll do mause, usamos "scroll" ou "fixed"</p>
+        <p>Por fim, sua shorthand é a seguinte ordem: <br>
+         background-color, background-image, background-repeat, background-attachment e background-position</p>
+     </main>
+     <main>
+        <article>
+            <h4>Extra</h4>
+            <p>Para adicionar um comentário você pode usar Shift + Alt + A. <br> 
+            Font-transform: Pode ser usada para transformar uma fonte, colocando todas as letras em maiúsculas por exemplo. <br>
+            Font-Variant: Pode ser usada como “font-transform” mas tem outras funções a mais como “small-caps". <br>
+            Border-collapse: indica se as bordas de algo vão ou não se encostar, usando “collapse” ou “separate”. 
+            </p>
+            <h2>Tabelas</h2>
+            <p>Uma tabela segue a seguinte hierarquia, “table”, “table-row (tr)", “table-header", “table-data (td)". Se a hierarquia não for obedecida as informações vão aparecer em cima ou para baixo da tabela. <br>
+            Além das tags anteriores também existem as tags, “thead”, “tbody” e “tfoot”, dentro dessas 3 tags podem ser colocadas tr, th e td. “caption” é a tag para o título da legenda e fica localizada em cima do thead. </p>
+            <p>Exemplo: <br> <img src="media/tabela.png" alt="" height="400px"></p>
+            <p>“scope” dentro das tags pode ser usada para demarcar o que aquela tag está se referindo, por exemplo, um thead com um tr e th Estado, está se referendo a todos os estados que vão vir abaixo então dentro do th é adicionado “scope: col”, para uma mesma linha usasse “row”. </p>
+            <p><strong>Pseudo-classe: nth-child</strong>, pode ser usada para definir caracteristicas a um numero especifico de tags, pode exemplo, p:nth-child(even) ou 2n significa que a cada 2 &lt;p&gt; um deles tera a configuração escrita no CSS </p>
+            <p>
+                Para que o cabeçalho fique preso ao topo da tela, em caso de tabelas muito grandes usasse primeiro position: relative em “tabble” e usamos top: -1px e position: sticky em “thead > tr > th”. <br>
+                Usando rowspan e colspan você pode fazer uma única célula ocupar uma linha ou uma coluna respectivamente. <br>
+                colgroup e rowgroup são usados em scope para dizer que um determinado th possui várias linhas ou colunas com seus dados. <br>
+                Usando a tag colgroup e col é possível modificar uma coluna inteira por vez, também é possível utilizar “span” para aumentar o número de colunas que será modificado em cada col. 
+            </p>
+        </article>
+     </main>
      <footer>
 
      </footer>
