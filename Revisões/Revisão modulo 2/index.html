@@ -52,12 +52,24 @@
             margin: 10px;
         }
 
+        #margem2 {
+            color: white;
+            background-color: rgb(125, 124, 124);
+            width: auto;
+            height: auto;
+            margin: -5px;
+        }
+
         #padding {
             color: white;
             background-color: rgb(125, 124, 124);
             width: auto;
             height: auto;
             padding: 10px;
+        }
+
+        :root {
+            --cor1: green;
         }
     </style>
 </head>
@@ -149,7 +161,24 @@
             <p>Sempre comece a formatar os componentes border, margim, padding e outline de cima para a direita, baixo e por fim esquerda. </p>
             <div id="borda">Borda</div>
             <div id="margem">Margem</div>
+            <p>Além da margem comum também é possivel aplicar uma margem negativa, que faz o oposto de uma margem comum.</p>
+            <div id="margem2">Margem</div>
             <div id="padding">Padding</div>
+            <p>"Shadow-box" é um dos códigos usados para criar sombras em caixas e dígitos, os valores são seu deslocamento horizontal, vertical, seu blur e espalhamento e por fim é decido a cor.</p>
+            <div id="padding" style="box-shadow: 2px 2px 2px 0px rgb(39, 39, 39);">Sombras</div>
+            <p>Usando "border-radius" pode-se arredondar as bordas de uma caixa, seus quatro valores são respectivamente cima-esquerda, cima-direita, baixo-direita, baixo-esquerda.</p>
+            <div id="padding" style="border-radius: 4px 4px 4px 4px;">Arredondamento</div>
+        </article>
+        <article>
+            <h4>Hoot</h4>
+            <p>Hoot é o comando usado para criar uma regra em CSS, todas as regras devem começar com "--", por exemplo, ":root {--cor1: green}. Após isso toda vez que usar o nome --cor1 você terá a cor <span style="color: var(--cor1);">verde</span>.</p>
+            <p>De uma forma parecida, "*" define um CSS para todas as coisas</p>
+        </article>
+        <article>
+            <h4>Responsividade</h4>
+            <p>Responsividade é fazer com que todo seu conteudo seja adaptavel para uma tela de diferentes tamanhos, uma maneira de criar isso é usar width e height max e min e delimitar o quando as coisas podem aumentar ou diminuir.</p>
+            <p>Pom fim, usando "position: absolute" é possivel "travar" uma caixa e assim usar "top" e "left" para guiar o item.</p>
+            <div id="margem" style="position: absolute; left: 100px;">Posição absoluta</div>
         </article>
      </main>
      <footer>
