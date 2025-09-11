@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio de Grid</title>
+    <title>Desafio de Grid - 1</title>
     <style>
         * {
             margin: 0px;
@@ -16,23 +16,28 @@
         }
         main {
             margin: auto;
-            width: 700px;
-            height: 700px;
+            width: 100vw;
+            height: 100vh;
             border: 1px solid blue;
             display: grid;
-            grid-template: 2fr 1fr 4fr 1fr / 1fr 2fr 1fr;
+            grid-template: 80px 40px 1fr 40px /1fr 150px;
+            gap: 5px;
         }
-        .caixa, .caixa2, .caixa3, .caixa4 {
+        .caixa, .caixa1, .caixa2, .caixa3, .caixa4 {
         border: 1px solid red;
+        background-color: lightgray;
         }
         .caixa {
             grid-area: 1/1/2/-1;
         }
+        .caixa1 {
+            grid-area: 2/1/3/ -1;
+        }
         .caixa2 {
-            grid-area: 2/1/-2/-2;
+            grid-area: 3/1/-2/-2;
         }
         .caixa3 {
-            grid-area: 2/-2/-2/-1;
+            grid-area: 3/-2/-2/-1;
         }
         .caixa4 {
             grid-area: -2/1/-1/-1;
@@ -40,8 +45,9 @@
     </style>
 </head>
 <body>
-        <main>
-        <div class="caixa">Menu</div>
+    <main>
+        <div class="caixa">Topo</div>
+        <div class="caixa1">Menu</div>
         <div class="caixa2">Principal</div>
         <div class="caixa3">Secundario</div>
         <div class="caixa4">Rodapé</div>
